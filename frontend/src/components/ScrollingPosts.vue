@@ -67,14 +67,7 @@ export default {
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
           position: 300
-        },
-        {
-          id: 6,
-          title: "Jak korzystać z platformy?",
-          content: "Poradnik dla nowych użytkowników...",
-          author: "Support",
-          position: 300
-        },
+        }
         // Dodaj więcej postów...
       ]
     },
