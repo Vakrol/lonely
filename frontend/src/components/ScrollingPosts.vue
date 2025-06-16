@@ -48,28 +48,28 @@ export default {
           position: 300
         },
         {
-          id: 2,
+          id: 3,
           title: "DUPE",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
           position: 300
         },
         {
-          id: 2,
+          id: 4,
           title: "W KTORA WYRUCHAM",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
           position: 300
         },
         {
-          id: 2,
+          id: 5,
           title: "Xddddddddddddddddddddddddddddddddddddddddddddddd ",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
           position: 300
         },
         {
-          id: 2,
+          id: 6,
           title: "Jak korzystać z platformy?",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
