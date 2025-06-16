@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       posts: this.generatePosts(),
-      scrollSpeed: 0.5,
+      scrollSpeed: 2,
       animationFrame: null
     }
   },
@@ -45,28 +45,28 @@ export default {
           title: "LAMA KURWA OGANRIJ DUPE",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
-          position: 300
+          position: 100
         },
         {
           id: 3,
           title: "DUPE",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
-          position: 300
+          position: 200
         },
         {
           id: 4,
           title: "W KTORA WYRUCHAM",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
-          position: 300
+          position: 400
         },
         {
           id: 5,
           title: "Xddddddddddddddddddddddddddddddddddddddddddddddd ",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
-          position: 300
+          position: 500
         }
         // Dodaj więcej postów...
       ]
