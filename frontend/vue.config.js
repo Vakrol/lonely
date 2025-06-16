@@ -12,7 +12,7 @@ module.exports = {
       }),
     ],
   },
-  publicPath: '/static/',
+  publicPath: './',
   outputDir: 'dist',
 
 }
