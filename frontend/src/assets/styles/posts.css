@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000d0d;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+.background-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.post-section {
+  width: 30%;
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #2f2f2f; /* lekko jaśniejszy niż tło */
+}
+
+.vertical-line.left {
+  left: calc(35% - 1px); /* 30% + odstęp po lewej */
+}
+
+.vertical-line.right {
+  right: calc(35% - 1px);
+}
