@@ -42,6 +42,34 @@ export default {
         },
         {
           id: 2,
+          title: "LAMA KURWA OGANRIJ DUPE",
+          content: "Poradnik dla nowych użytkowników...",
+          author: "Support",
+          position: 300
+        },
+        {
+          id: 2,
+          title: "DUPE",
+          content: "Poradnik dla nowych użytkowników...",
+          author: "Support",
+          position: 300
+        },
+        {
+          id: 2,
+          title: "W KTORA WYRUCHAM",
+          content: "Poradnik dla nowych użytkowników...",
+          author: "Support",
+          position: 300
+        },
+        {
+          id: 2,
+          title: "Xddddddddddddddddddddddddddddddddddddddddddddddd ",
+          content: "Poradnik dla nowych użytkowników...",
+          author: "Support",
+          position: 300
+        },
+        {
+          id: 2,
           title: "Jak korzystać z platformy?",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
