@@ -42,21 +42,16 @@ export default {
         },
         {
           id: 2,
-          title: "LAMA KURWA OGANRIJ DUPE",
+          title: "Witaj! Tutaj mozesz sie wyrzyć, lub wyżalićE",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
           position: 100
         },
+
+
         {
           id: 3,
-          title: "DUPE",
-          content: "Poradnik dla nowych użytkowników...",
-          author: "Support",
-          position: 200
-        },
-        {
-          id: 4,
-          title: "W KTORA WYRUCHAM",
+          title: "Piękna pogoda!",
           content: "Poradnik dla nowych użytkowników...",
           author: "Support",
           position: 400
