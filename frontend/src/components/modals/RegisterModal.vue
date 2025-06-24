@@ -19,6 +19,9 @@
             placeholder="Twój pseudonim"
             class="modal-input"
           >
+          <div v-if="errorMessages && errorMessages.username" class="error">
+            {{ errorMessages.username[0] }}
+          </div>
         </div>
 
         <div class="input-group">
@@ -29,6 +32,9 @@
             placeholder="twój@email.com"
             class="modal-input"
           >
+          <div v-if="errorMessages && errorMessages.email" class="error">
+            {{ errorMessages.email[0] }}
+          </div>
         </div>
 
         <div class="input-group">
@@ -68,6 +74,9 @@
         >
           Zarejestruj się
         </button>
+        <div v-if="errorMessages && errorMessages.general" class="error">
+          {{ errorMessages.general[0] }}
+        </div>
       </form>
 
       <div class="modal-footer">
@@ -86,12 +95,14 @@ export default {
       email: '',
       password: '',
       confirmPassword: '',
-      acceptedTerms: false
+      acceptedTerms: false,
+      errorMesseges: {}
     }
   },
   computed: {
     formValid() {
       console.log('valid');
+      console.log(this.username,'USER')
       return (
         this.username &&
         this.email &&
@@ -99,10 +110,11 @@ export default {
         this.password === this.confirmPassword &&
         this.acceptedTerms
       )
-    }
+    },
   },
   methods: {
     async registerUser() {
+      console.log(this.username,'ser')
       try {
         const response = await axios.post('http://127.0.0.1:8000/api/register/', {
           username: this.username,
@@ -112,11 +124,17 @@ export default {
         console.log('Rejestracja', response.data);
         this.$emit('close');
       } catch (error) {
-        console.error('CHUJA', error.response?.data || error);
+        if(error.response && error.response.data) {
+          this.errorMesseges = error.response.data;
+        } else {
+          this.errorMesseges = { general: ['Ups! Coś poszło nie tak']};
+        }
+        console.log(this.errorMesseges,'errors', this.errorMesseges.error)
       }
     },
 
     handleSubmit() {
+      console.log('click')
       if (!this.formValid) return;
       this.registerUser();
     },
@@ -229,6 +247,12 @@ export default {
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.error {
+  color: #ff4d4f;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 .modal-submit-btn:hover:not(:disabled) {
